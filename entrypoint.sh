@@ -24,6 +24,7 @@ fi
 echo "Running npm install"
 npm install
 echo "Running npm audit fix"
+#This causes the build process to freeze here for some reason
 #npm audit fix
 #echo "Running npm build"
 npm run build
