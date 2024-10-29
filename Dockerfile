@@ -1,4 +1,4 @@
-FROM node:20.18-alpine3.19
+FROM node:alpine
 
 # Update and install necessary packages
 RUN apk update && apk add --no-cache \
@@ -17,7 +17,6 @@ WORKDIR /app
 COPY entrypoint.sh /app/entrypoint.sh
 
 # Add permissions to the entrypoint script
-RUN ["chmod", "+x", "/app/entrypoint.sh"]
+RUN chmod +x /app/entrypoint.sh
 
-RUN ["mkdir", "/app/out"]
 ENTRYPOINT ["/app/entrypoint.sh"]
