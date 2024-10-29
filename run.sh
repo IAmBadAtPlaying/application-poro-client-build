@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
 
-docker run --rm poro-client-builder
+docker run --rm -v poro-client-build-output:/app/out poro-client-builder

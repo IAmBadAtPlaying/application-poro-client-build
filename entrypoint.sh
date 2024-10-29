@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 # Clone and build frontend
 clear
@@ -23,8 +24,8 @@ fi
 echo "Running npm install"
 npm install
 echo "Running npm audit fix"
-npm audit fix
-echo "Running npm build"
+#npm audit fix
+#echo "Running npm build"
 npm run build
 echo "Frontend done"
 
@@ -43,8 +44,9 @@ else
 	cd application-poro-client || exit
 fi
 # Copy the built frontend to the backend resources folder
-cp -r /app/poro-client-frontend/out/* /app/Poro-Client/src/main/resources/html/
+cp -r /app/application-poro-client-frontend/out/* /app/application-poro-client/src/main/resources/html/
 
 # Build the backend
 mvn clean package
+cp -r /app/application-poro-client/target/*.jar /app/out/
 echo "Build script done!"
