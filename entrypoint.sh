@@ -11,7 +11,7 @@ if [ -d "application-poro-client-frontend" ]; then
   sleep 2s
 else
   echo "Cloning FE Repository"
-  git clone https://github.com/IAmBadAtPlaying/application-poro-client-frontend
+  git clone https://github.com/Julianw03/application-poro-client-frontend
   sleep 2s
   cd application-poro-client-frontend || exit
 fi
@@ -40,7 +40,7 @@ if [ -d "application-poro-client" ]; then
 	sleep 2s
 else
 	echo "Cloning BE Repository"
-	git clone https://github.com/IAmBadAtPlaying/application-poro-client
+	git clone https://github.com/Julianw03/application-poro-client
 	sleep 2s
 	cd application-poro-client || exit
 fi
