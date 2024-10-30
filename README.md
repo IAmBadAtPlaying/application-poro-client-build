@@ -1,8 +1,8 @@
 # Poro-Client Build Scripts
 ## Project Overview
-- [Backend](./application-poro-client)
-- [Frontend](./application-poro-client-frontend)
-- 📍[Build Scripts](./application-poro-client-build)
+- [Backend](https://github.com/Julianw03/application-poro-client)
+- [Frontend](https://github.com/Julianw03/application-poro-client-frontend)
+- 📍[Build Scripts](https://github.com/Julianw03/application-poro-client-build)
 
 ## Build Scripts
 These are the script files required to build the latest .jar File for the Poro-Client.
