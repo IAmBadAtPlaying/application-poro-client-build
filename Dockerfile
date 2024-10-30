@@ -17,6 +17,6 @@ WORKDIR /app
 COPY entrypoint.sh /app/entrypoint.sh
 
 # Add permissions to the entrypoint script
-RUN chmod +x /app/entrypoint.sh
+RUN dos2unix /app/entrypoint.sh && chmod +x /app/entrypoint.sh
 
 ENTRYPOINT ["/app/entrypoint.sh"]
